@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #A9C482;
+}
+main{
+    margin: 60px auto;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+.coloured{
+    background-color: #2D696F;
+    border-radius: 50%;
+}
+.big-circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #A9C482;
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    left: 75px;
+}
+
+/* Mobile view */
+@media only screen and (min-width : 375px){
+    main{
+        margin-top: 150px;
+    }
+}
+
+/* Desktop view */
+@media only screen and (min-width : 768px){
+    main{
+        margin-top: 150px;
+        width: 450px;
+        height: 450px;
+    }
+    .big-circle{
+        height: 225px;
+        width: 225px;
+        top: 112.5px;
+        left: 112.5px;
+    }
+}
+
+/* Mobile view */
+@media only screen and (min-width : 1280px){
+    main{
+        margin-top: 30px;
+    }
+}
